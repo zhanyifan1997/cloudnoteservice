@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloudnote?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  messages:
+    basename: i18n.login
+  thymeleaf:
+    cache: false
+
+  http:
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+server:
+  tomcat:
+    uri-encoding: utf-8
+
+#  port: 443
+#  ssl:
+#    key-store: classpath:520oo.jks
+#    key-store-password: 0kWdBAqQ
+#    key-store-type: JKS
+#    key-alias: =alias
